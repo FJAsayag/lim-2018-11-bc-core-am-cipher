@@ -11,44 +11,73 @@
     <script src="index.js"></script>
 
 
-
 <header>CÓDIGO SECRETO</header>
-<main>
 
- <section id="Intro">
-   <h1>Un poco de historia...</h1>
-  <p>En los tiempos de Julio César, se usaba este cifrado para comunicarse
-    de manera <big><strong>secreta</strong></big>...</p>
-  <p>Ahora podrías hacerlo tú.</p>
+    <main>
+<!-- primera pantalla -->
+     <section id="Intro">
+       <h1>Un poco de historia...</h1>
+      <p>En los tiempos de Julio César, se usaba este cifrado para comunicarse
+        de manera <big><strong>secreta</strong></big>...</p>
+      <p>Ahora podrías hacerlo tú.</p>
+      <button type="button" id="go-to-coding">Prueba a cifrar</button>
+      <button type="button" id="go-to-decoding">Prueba a descifrar</button>
+     </section>
+  <br>
 
-  <button type="button" id="go-to-coding">Prueba a cifrar</button>
-  <button type="button" id="go-to-decoding">Prueba a descifrar</button>
- </section>
-<br>
- <section id="instruccions">
-   <ul>
-     <li>
-     <li>
-     <li>
-     <li>
-   </ul>
-
- </section>
-<br>
- <section id="coding-selection">
-   <label for="message">Mensaje: <input type="text" id="message" /></label>
-   <label for="displacement">Clave: <input type="number" id="displacement"  min="1" /></label>
-   <button type="button" id="coding">CIFRAR</button>
- </section>
-<br>
- <section id="decoding-section">
-   <label for="message">Mensaje: <input type="text" id="message" /></label>
-   <label for="displacement">Clave: <input type="number" id="displacement"  min="1" /></label>
-   <button type="button" id="coding">DESCIFRAR</button>
- </section>
+ <!--seguna pantalla: lateral de instrucciones -->
+     <section id="instruccions">
+       <p>Instrucciones</p>
+       <ol>
+         <li>Ingresa el mensaje que deseas cifrar, o sea, transformar para
+           hacerlo secreto.</li>
+         <li>Ingresa el número clave de tu gusto para la creación de tu código
+           secreto. Recuerda que este número clave es esencial para crear y
+           entender el texto secreto.</li>
+         <li>Dale click al botón para ver cómo se ve lo que pusiste en el
+           cuadro de texto</li>
+       </ol>
+     </section>
+  <br>
 
 
- </main>
+ <!--seguna pantalla: opción cifrado-->
+     <section id="coding-selection">
+       <label for="writtenMessage1">Mensaje: <textarea id="writtenMessage1"
+         rows="5" cols="40"</label></textarea></label>
+       <label for="offset1">Clave: <input type="number" id="offset1"  min="1" /></label>
+       <button type="button" id="coding">CIFRAR</button>
+     </section>
+  <br>
 
+ <!--seguna pantalla: opción descifrado -->
+     <section id="decoding-section">
+       <label for="writtenMessage2">Mensaje: <textarea id="writtenMessage2" rows="5" cols="40"</label></textarea>
+       <label for="offset2">Clave: <input type="number" id="offset2"  min="1" /></label>
+       <button type="button" id="decoding">DESCIFRAR</button>
+     </section>
+  <br>
+ <!-- tercera pantalla -->
+      <section id="suggestions">
+        <p>Lo que podrías hacer...</p>
+        <ul>
+          <li>Envía mensajes secretos a tus amigxs con ayuda de Código Secreto.
+            ¡Es más divertido!</li>
+          <li>Mandar mensajes de amor secretos que solo esa personita que
+            te gusta entenderá.</li>
+          <li>¿Has pensado en comunicarte con tu papá o mamá de manera más
+            graciosa? Rétalos con Código Secreto.
+        </ul>
+      </section>
+  <br>
+     <section id="final">
+       <p>He aquí tu mensaje secreto</p>
+
+     </section>
+
+
+
+
+     </main>
   </body>
 </html>
