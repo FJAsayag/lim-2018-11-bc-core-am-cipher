@@ -1,16 +1,14 @@
 window.cipher = {
-  // ...
 };
 
 //cipher.js: cifrando
-const buttonCyphing= document.getElementById("coding")
-buttonCyphing.addEventListener("click", function(){
+document.getElementById("coding").addEventListener("click", function (){
   let messageCoding = document.getElementById('writtenMessage1').value;
   messageCoding = messageCoding.toUpperCase();
  let displacementCoding = document.getElementById('offset1').value;
   let secretCoding = "";
  let secretPhraseCoding = "";
-  cyphing(messageCoding, displacementCoding, secretCoding, secretPhraseCoding)
+  cyphing(messageCoding, displacementCoding, secretCoding, secretPhraseCoding);
 
 })
 
@@ -35,14 +33,13 @@ console.log(secretPhraseC);
 }
 
 //cipher.js; descifrando
-const buttonUncyphing= document.getElementById("decoding");
-buttonUncyphing.addEventListener("click", function() {
+ document.getElementById("decoding").addEventListener("click", function() {
    let messageDecoding = document.getElementById('writtenMessage2').value;
   messageDecoding = messageDecoding.toUpperCase();
  let displacementDecoding = document.getElementById('offset2').value;
   let secretDecoding = "";
  let secretPhraseDecoding = "";
-  uncyphing(messageDecoding, displacementDecoding, secretDecoding, secretPhraseDecoding)
+  uncyphing(messageDecoding, displacementDecoding, secretDecoding, secretPhraseDecoding);
 
 })
 
