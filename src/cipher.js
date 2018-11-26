@@ -1,6 +1,5 @@
 window.cipher = {
 };
-
 //cipher.js: cifrando
 document.getElementById("coding").addEventListener("click", function (){
   let messageCoding = document.getElementById('writtenMessage1').value;
@@ -10,7 +9,7 @@ document.getElementById("coding").addEventListener("click", function (){
  let secretPhraseCoding = "";
   cyphing(messageCoding, displacementCoding, secretCoding, secretPhraseCoding);
 
-})
+});
 
 function cyphing(textC, offsetC, secretC, secretPhraseC) {
 
@@ -19,29 +18,36 @@ function cyphing(textC, offsetC, secretC, secretPhraseC) {
 
   for ( let i = 0; i < textC.length; i++) {
     secretC = parseInt(textC.charCodeAt(i));
+    if (secretC === 32){
+      secretC === 32;
+    } else {
   secretC = secretC + parseInt(offsetC);
+    if (secretC > 90) {
+      secretC -= 26;
+    } };
   secretC = String.fromCharCode(secretC);
     secretPhraseC += secretC
-  }
+  };
 
 
 console.log(textC);
 console.log(offsetC);
 console.log(secretC);
 console.log(secretPhraseC);
-
-}
+document.getElementById("result").innerHTML = secretPhraseC;
+};
 
 //cipher.js; descifrando
- document.getElementById("decoding").addEventListener("click", function() {
+const buttonUncyphing= document.getElementById("decoding");
+buttonUncyphing.addEventListener("click", function() {
    let messageDecoding = document.getElementById('writtenMessage2').value;
   messageDecoding = messageDecoding.toUpperCase();
  let displacementDecoding = document.getElementById('offset2').value;
   let secretDecoding = "";
  let secretPhraseDecoding = "";
-  uncyphing(messageDecoding, displacementDecoding, secretDecoding, secretPhraseDecoding);
+  uncyphing(messageDecoding, displacementDecoding, secretDecoding, secretPhraseDecoding)
 
-})
+});
 
 function uncyphing(textD, offsetD, secretD, secretPhraseD) {
 
@@ -49,14 +55,21 @@ function uncyphing(textD, offsetD, secretD, secretPhraseD) {
 
   for ( let i = 0; i < textD.length; i++) {
     secretD = parseInt(textD.charCodeAt(i));
+    if (secretD === 32){
+      secretD === 32;
+    } else {
   secretD = secretD - parseInt(offsetD);
+    if (secretD < 65) {
+      secretD += 26;
+    } } ;
   secretD = String.fromCharCode(secretD);
     secretPhraseD += secretD
-  }
+  };
 
 console.log(textD);
 console.log(offsetD);
 console.log(secretD);
 console.log(secretPhraseD);
 
-}
+document.getElementById("result").innerHTML = secretPhraseD;
+};
