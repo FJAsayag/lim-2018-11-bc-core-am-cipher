@@ -1,6 +1,4 @@
-body {
-  background-image: url(julesC.jpg);
-  background-size: 100vw 100vh;
-  background-attachment: fixed;
-
+header{
+  color: gold;
+  background-color: black;
 }
