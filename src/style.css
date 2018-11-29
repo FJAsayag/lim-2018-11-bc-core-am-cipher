@@ -1,4 +1,45 @@
 header{
-  color: gold;
+  font-family: "Bodoni MT black";
+  font-size: 2em;
+  padding: 0.7em 2em;
+  color: #ffbf00;
   background-color: black;
+  margin: 0.5em;
+}
+
+main{
+  background-color: rgb(11, 82, 184, 0.5);
+  margin: 2em 5em;
+  border-radius: 0.5em;
+}
+
+h1{
+  font-family: "Goudy Stout";
+  color: white;
+  background-color: #7d2181;
+  margin: 1em;
+  border-radius: 0.8em;
+}
+
+img{
+  border-radius: 1em;
+  margin: 1em;
+}
+
+button{
+  background-color: rgb(30, 144, 255);
+  color: white;
+  padding: 1.7em;
+}
+
+p.intro{
+  background-color: #7d2181;
+  color: white;
+  font-family: "Footlight MT Light";
+  text-align: right;
+  padding: 1.5em;
+  border: 0.2em solid rgb(128, 0, 128);
+  border-radius: 1em;
+  width: 50%;
+  margin: 1em;
 }
