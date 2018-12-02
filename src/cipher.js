@@ -1,5 +1,5 @@
 window.cipher = {
-encode: function (textC, offsetC) {
+encode: function (offsetC,textC) {
  offsetC = offsetC % 26;
  let secretC = "";
  let secretPhraseC = "";
@@ -12,8 +12,8 @@ encode: function (textC, offsetC) {
        secretC = secretC + parseInt(offsetC);
        if (secretC > 90) {
        secretC -= 26;
-       } 
-    } 
+       }
+    }
    secretC = String.fromCharCode(secretC);
     secretPhraseC += secretC
   }
@@ -21,7 +21,7 @@ encode: function (textC, offsetC) {
  return secretPhraseC;
 },
 
-decode: function(textD, offsetD){
+decode: function(offsetD, textD){
  offsetD = offsetD % 26;
  let secretD = "";
  let secretPhraseD = "";
@@ -34,8 +34,8 @@ decode: function(textD, offsetD){
       secretD = secretD - parseInt(offsetD);
        if (secretD < 65) {
        secretD += 26;
-       } 
-    } 
+       }
+    }
    secretD = String.fromCharCode(secretD);
    secretPhraseD += secretD;
   }

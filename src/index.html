@@ -6,26 +6,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-<header>CÓDIGO SECRETO</header>
+<header>CO-DIGO SECRETAMENTE</header>
   <main>
     <!-- primera pantalla -->
       <section id="Intro">
         <br>
            <h1>Un poco de historia...</h1>
           <br>
+            <div>
           <img src="julesC.jpg"
                alt="Julio César pensasor en área de guerra"
                width=35% height=auto>
-            <p class="intro">El Cifrado César viene del muy reconocido nombre de Julio César,
+          <p class="intro">El Cifrado César viene del muy reconocido nombre de Julio César,
             hombre que inventó esta forma de comunicación para, en tiempos de
             guerra, poder transmiir algún mensaje de forma <big><strong>secreta </strong></big>con
             sus solados.
             <br>
-            Este cifrado consistía en sustituír cada letra por otra según el
+           Este cifrado consistía en sustituír cada letra por otra según el
             número clave que se indique. Por ejemplo, si la letra a cifrar era A,
             el número clave 2, entonces, la letra secreta sería C en sustitución
             de la primera vocal.</p>
             <br>
+          </div>
+
           <p class="outro">Ahora podrías cifrar (o descifrar) tu propio mensaje tú mismo.</p>
           <br>
           <button type="button" id="go-to-coding">Prueba a cifrar</button>
@@ -33,7 +36,7 @@
       </section>
 
      <!--seguna pantalla: lateral de instrucciones -->
-      <aside id="instruccions">
+      <aside id="instruccionsC">
            <p>Instrucciones</p>
            <ol>
              <li>Ingresa el mensaje que deseas cifrar, o sea, transformar para hacerlo secreto.</li>
@@ -51,6 +54,15 @@
 
 
      <!--seguna pantalla: opción descifrado -->
+     <aside id="instruccionsD">
+          <p>Instrucciones</p>
+          <ol>
+            <li>Ingresa el mensaje que deseas descifrar, o sea, transformar para hacerlo comprensible.</li>
+            <li>Ingresa el número clave que te dijeron para descifrar el mensaje. Recuerda que este número clave es esencial para crear y entender el texto secreto.</li>
+            <li>Dale click al botón para ver cómo se ve lo que pusiste en el cuadro de texto</li>
+          </ol>
+    </aside>
+
       <section id="decoding-section">
         <label for="writtenMessage2">Mensaje: </label><textarea id="writtenMessage2" rows="5" cols="40"></textarea>
         <label for="offset2">Clave: </label><input type="number" id="offset2"  min="1" />
