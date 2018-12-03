@@ -4,19 +4,17 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Indie+Flower|Kanit|Poppins|Text+Me+One|Ubuntu" rel="stylesheet">
   </head>
   <body>
-<header>CO-DIGO SECRETAMENTE</header>
+<header>CO-DIGO EN SECRETO</header>
   <main>
     <!-- primera pantalla -->
       <section id="Intro">
         <br>
            <h1>Un poco de historia...</h1>
           <br>
-            <div>
-          <img src="julesC.jpg"
-               alt="Julio César pensasor en área de guerra"
-               width=35% height=auto>
+            <div class="pintro">
           <p class="intro">El Cifrado César viene del muy reconocido nombre de Julio César,
             hombre que inventó esta forma de comunicación para, en tiempos de
             guerra, poder transmiir algún mensaje de forma <big><strong>secreta </strong></big>con
@@ -29,13 +27,16 @@
             <br>
           </div>
 
-          <p class="outro">Ahora podrías cifrar (o descifrar) tu propio mensaje tú mismo.</p>
+          <p class="nowyou">Ahora podrías cifrar (o descifrar) tu propio mensaje tú mismo.</p>
           <br>
+          <div class="buttons">
           <button type="button" id="go-to-coding">Prueba a cifrar</button>
           <button type="button" id="go-to-decoding">Prueba a descifrar</button>
+        </div>
       </section>
 
      <!--seguna pantalla: lateral de instrucciones -->
+<div class="second-screen">
       <aside id="instruccionsC">
            <p>Instrucciones</p>
            <ol>
@@ -47,13 +48,22 @@
 
      <!--seguna pantalla: opción cifrado-->
       <section id="coding-section">
-           <label for="writtenMessage1">Mensaje: </label><textarea id="writtenMessage1" rows="5" cols="40"></textarea>
-           <label for="offset1">Clave: </label><input type="number" id="offset1"  min="1" />
+        <div class="message">
+           <label for="writtenMessage1">Mensaje: </label> <br>
+           <textarea id="writtenMessage1" rows="5" cols="40"></textarea> <br>
+           <label for="offset1">Clave: </label> <br>
+           <input type="number" id="offset1"  min="1" /> <br>
+         <div class="buttons">
+           <br>
+           <button type="button" id="come-to-home-c">VOLVER</button>
            <button type="button" id="coding">CIFRAR</button>
+         </div>
+         </div>
       </section>
-
+</div>
 
      <!--seguna pantalla: opción descifrado -->
+<div class="second-screen">
      <aside id="instruccionsD">
           <p>Instrucciones</p>
           <ol>
@@ -64,27 +74,41 @@
     </aside>
 
       <section id="decoding-section">
-        <label for="writtenMessage2">Mensaje: </label><textarea id="writtenMessage2" rows="5" cols="40"></textarea>
-        <label for="offset2">Clave: </label><input type="number" id="offset2"  min="1" />
+       <div class="message">
+        <label for="writtenMessage2">Mensaje: </label>  <br>
+        <textarea id="writtenMessage2" rows="5" cols="40"></textarea> <br>
+        <label for="offset2">Clave: </label> <br>
+        <input type="number" id="offset2"  min="1" /> <br>
+         <div class="buttons">
+           <br>
+           <button type="button" id="come-to-home-d">VOLVER</button>
            <button type="button" id="decoding">DESCIFRAR</button>
+         </div>
+        </div>
       </section>
+</div>
 
      <!-- tercera pantalla -->
-      <aside id="suggestions">
-            <p>Lo que podrías hacer...</p>
-            <ul>
-              <li>Envía mensajes secretos a tus amigxs con ayuda de Código Secreto. ¡Es más divertido!</li>
-              <li>Mandar mensajes de amor secretos que solo esa personita que te gusta entenderá.</li>
-              <li>¿Has pensado en comunicarte con tu papá o mamá de manera más graciosa? Rétalos con Código Secreto.</li>
-            </ul>
-      </aside>
+
 
       <section id="final">
-           <p>He aquí tu mensaje secreto</p>
-           <p id="result"></p>
-           <button type="button" value="button" id="back-to-home">INICIO</button>
+           <p class="outro">He aquí tu mensaje secreto</p>
+             <p class="secretmsg" id="result"></p>
 
-      </section>
+          <aside id="suggestions">
+                <p>Lo que podrías hacer...</p>
+                <ul>
+                  <li>Envía mensajes secretos a tus amigxs con ayuda de Co-digo en Secreto. ¡Es más divertido!</li>
+                  <li>Mandar mensajes de amor secretos que solo esa personita que te gusta entenderá.</li>
+                  <li>¿Has pensado en comunicarte con tu papá o mamá de manera más graciosa? Rétalos con Co-digo en Secreto.</li>
+                </ul>
+          </aside>
+          <div class="buttons">
+           <button type="button" value="button" id="back-to-home">INICIO</button>
+         </div>
+       </section>
+
+
 
          <script src="cipher.js"></script>
          <script src="index.js"></script>

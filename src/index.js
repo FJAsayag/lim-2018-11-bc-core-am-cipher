@@ -31,6 +31,17 @@ document.getElementById("suggestions").style.display="none";
 document.getElementById("final").style.display="none";
 });
 
+//de pantalla coding a principal again
+document.getElementById("come-to-home-c").addEventListener("click", function() {
+  location.reload();
+  });
+
+//de pantalla decoding a principal again
+document.getElementById("come-to-home-d").addEventListener("click", function() {
+  location.reload();
+  });
+
+
 //De pantalla coding a la pantalla final
 document.getElementById("coding").addEventListener("click", function (){
   document.getElementById("Intro").style.display="none";
@@ -38,10 +49,10 @@ document.getElementById("coding").addEventListener("click", function (){
   document.getElementById("instruccionsD").style.display="none";
   document.getElementById("coding-section").style.display="none";
   document.getElementById("decoding-section").style.display="none";
-  document.getElementById("suggestions").style.display="none";
+  document.getElementById("suggestions").style.display="block";
   document.getElementById("final").style.display="block";
 
-//cipher.js: cifrando
+   //cipher.js: cifrando
  let messageCoding = document.getElementById('writtenMessage1').value;
   messageCoding = messageCoding.toUpperCase();
  let displacementCoding = document.getElementById('offset1').value;
@@ -59,10 +70,10 @@ document.getElementById("instruccionsC").style.display="none";
 document.getElementById("instruccionsD").style.display="none";
 document.getElementById("coding-section").style.display="none";
 document.getElementById("decoding-section").style.display="none";
-document.getElementById("suggestions").style.display="none";
+document.getElementById("suggestions").style.display="block";
 document.getElementById("final").style.display="block";
 
-//cipher.js; descifrando
+   //cipher.js; descifrando
  let messageDecoding = document.getElementById('writtenMessage2').value;
  messageDecoding = messageDecoding.toUpperCase();
  let displacementDecoding = document.getElementById('offset2').value;
