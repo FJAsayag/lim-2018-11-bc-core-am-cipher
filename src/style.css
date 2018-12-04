@@ -5,16 +5,18 @@ header{
   color: white;
   background-color: rgb(57, 30, 59);
   margin: 0.5em;
+  box-sizing: border-box;
 }
 
 main{
   background-image: url("rome.jpg");
   margin: 2em 3em;
   border-radius: 0.5em;
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
+  min-height: 100%;
 }
 
 h1, p.nowyou, p.outro{
@@ -24,6 +26,7 @@ h1, p.nowyou, p.outro{
   margin: 1em;
   border-radius: 0.8em;
   padding: 0.5em;
+  box-sizing: border-box;
 }
 
 p.intro{
@@ -38,10 +41,12 @@ p.intro{
   margin-right: auto;
   margin-left: auto;
   float: inherit;
+  box-sizing: border-box;
 }
 
 p.nowyou{
   text-align: center;
+  box-sizing: border-box;
 }
 
 button{
@@ -56,6 +61,7 @@ button{
 div.buttons{
   text-align: center;
   width: 100%;
+  box-sizing: border-box;
 }
 
 aside{
@@ -71,6 +77,7 @@ aside{
   margin-right: auto;
   margin-left: auto;
   float: none;
+  box-sizing: border-box;
 }
 
 div.message{
@@ -85,13 +92,14 @@ div.message{
   margin-right: auto;
   margin-left: auto;
   float: none;
+  box-sizing: border-box;
 }
 
 p.secretmsg{
   background-color: rgb(64, 21, 68, 0.9);
   color: white;
   font-family: 'Indie Flower', sans-serif;
-  text-align: right;
+  text-align: center;
   padding: 1.5em;
   border-radius: 1em;
   width: 90%;
@@ -100,3 +108,16 @@ p.secretmsg{
   margin-left: auto;
   float: inherit;
 }
+@media(max-width:480px){
+  #Intro{
+    width: 100%;
+  }
+  .second-screen{
+    width: 100%;
+  }
+  #final{
+    width: 100%;
+  }
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"
